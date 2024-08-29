@@ -57,7 +57,7 @@ export const TabNavigator: FunctionComponent = () => {
           }}
         />
         <Tabs.Screen
-          name="two"
+          name="market"
           options={{
             headerShown: false,
             tabBarLabelStyle: {

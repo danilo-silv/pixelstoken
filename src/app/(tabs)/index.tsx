@@ -1,11 +1,10 @@
-import { H4 } from 'tamagui';
-
 import { Container } from '@/components/atoms';
+import { Header } from '@/components/organinsms';
 
 export default function Home() {
   return (
     <Container>
-      <H4>DANILO SILVA</H4>
+      <Header />
     </Container>
   );
 }

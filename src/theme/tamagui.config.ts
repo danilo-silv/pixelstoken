@@ -29,9 +29,12 @@ const customTokens = createTokens({
   ...tokens,
   color: {
     ...tokens.color,
+    gray8Light: '#7C7D82',
     gray10Light: '#2F2F34',
     green10Light: '#00FFA3',
     blue10Light: '#2A3547',
+    blue11Light: '#3B3F58',
+    blue12Light: '#212436',
     tabBar: '#2A35474D',
   },
 });

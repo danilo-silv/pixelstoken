@@ -1,12 +1,11 @@
 import { themes } from '@tamagui/themes';
-import { Link, Tabs } from 'expo-router';
+import {  Tabs } from 'expo-router';
 import { FunctionComponent } from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Text, YStack } from 'tamagui';
 
 import { TABBAR_HEIGHT } from './constants';
 
-import { HeaderButton } from '@/components/HeaderButton';
 import { BackgroudIllustration } from '@/components/atoms/Illustrations';
 import { TabBarIcon } from '@/components/molecules';
 import config from '@/theme/tamagui.config';
@@ -54,12 +53,7 @@ export const TabNavigator: FunctionComponent = () => {
                   borderTopLeftRadius={2}
                 />
               </YStack>
-            ),
-            headerRight: () => (
-              <Link href="/cart" asChild>
-                <HeaderButton />
-              </Link>
-            ),
+            )
           }}
         />
         <Tabs.Screen

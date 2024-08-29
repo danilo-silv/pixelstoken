@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { YStack } from 'tamagui';
 
 import { Container } from '@/components/atoms';
-import { Balance, BulletActions, Header } from '@/components/organinsms';
+import { Balance, BulletActions, Header, Tokens } from '@/components/organinsms';
 
 export default function Home() {
   return (
@@ -14,6 +14,8 @@ export default function Home() {
         <Balance />
 
         <BulletActions />
+
+        <Tokens />
       </YStack>
     </Container>
   );

@@ -1,20 +1,24 @@
 import { themes } from '@tamagui/themes';
 import { Link, Tabs } from 'expo-router';
 import { FunctionComponent } from 'react';
+import { StatusBar } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Text, useTheme, YStack } from 'tamagui';
+import { Text, YStack } from 'tamagui';
 
 import { TABBAR_HEIGHT } from './constants';
 
 import { HeaderButton } from '@/components/HeaderButton';
+import { BackgroudIllustration } from '@/components/atoms/Illustrations';
 import { TabBarIcon } from '@/components/molecules';
 import config from '@/theme/tamagui.config';
 
 export const TabNavigator: FunctionComponent = () => {
-  const theme = useTheme();
   const insets = useSafeAreaInsets();
   return (
-    <YStack flex={1} backgroundColor="$background">
+    <YStack flex={1} backgroundColor="$background" position="relative">
+      <YStack position="absolute">
+        <BackgroudIllustration />
+      </YStack>
       <Tabs
         screenOptions={{
           tabBarActiveTintColor: 'white',
@@ -28,7 +32,7 @@ export const TabNavigator: FunctionComponent = () => {
           },
         }}
         sceneContainerStyle={{
-          backgroundColor: theme.background.val,
+          backgroundColor: 'transparent',
         }}>
         <Tabs.Screen
           name="index"

@@ -1,4 +1,4 @@
-export interface NFTResponseData {
+export interface NFTData {
   image: string;
   name: string;
   description: string;

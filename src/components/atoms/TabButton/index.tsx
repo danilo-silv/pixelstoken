@@ -10,15 +10,15 @@ import { Text, View, XStack } from 'tamagui';
 
 import config from '@/theme/tamagui.config';
 
-export type TabButtonType = {
+export interface TabButtonType {
   title: string;
-};
+}
 
-export type TabButtonProps = {
+export interface TabButtonProps {
   buttons: TabButtonType[];
   selectedTab: number;
   setSelectedTab: (index: number) => void;
-};
+}
 
 export const TabButton = ({ buttons, selectedTab, setSelectedTab }: TabButtonProps) => {
   const [dimensions, setDimensions] = useState({ height: 20, width: 100 });

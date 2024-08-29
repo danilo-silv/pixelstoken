@@ -2,7 +2,7 @@ import FontAwesome from '@expo/vector-icons/FontAwesome6';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Button, Text, XStack, YStack } from 'tamagui';
 
-import { ReceiveMoney, SendMoney } from '@/components/atoms/Icons';
+import Icons from '@/components/atoms/Icons';
 
 export const BulletActions = () => {
   return (
@@ -10,7 +10,7 @@ export const BulletActions = () => {
       <YStack space={8} justifyContent="center" alignItems="center">
         <Button
           alignSelf="center"
-          icon={SendMoney}
+          icon={Icons.SendMoney}
           size="$6"
           backgroundColor="$blue10Light"
           w={76}
@@ -50,7 +50,7 @@ export const BulletActions = () => {
       <YStack space={8} justifyContent="center" alignItems="center">
         <Button
           alignSelf="center"
-          icon={ReceiveMoney}
+          icon={Icons.ReceiveMoney}
           size="$6"
           backgroundColor="$blue10Light"
           w={76}

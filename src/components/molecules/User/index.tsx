@@ -18,7 +18,7 @@ export function User() {
         </Avatar>
       </LinearGradient>
       <YStack>
-        <Text color="white">Olá,</Text>
+        <Text color="white">Hello,</Text>
 
         <H4 color="white" fontWeight="bold" mt="$-2">
           Danilo

@@ -13,15 +13,13 @@ interface ListItemTokenType {
 export const ListItemToken = ({ token }: ListItemTokenType) => {
   const IconComponent = Icons[token.name];
 
-  const chartData = token.charts.map((value, index) => ({ x: value.value, y: index }));
-
   const growing = token.soaring > 6;
 
   return (
     <XStack justifyContent="space-between" alignItems="center">
       <XStack space={12}>
         <IconComponent />
-        <YStack justifyContent="center">
+        <YStack justifyContent="center" space={2}>
           <Text color="white" fontSize={16} fontWeight={700} letterSpacing={0.32}>
             {token.name}
           </Text>
@@ -31,7 +29,7 @@ export const ListItemToken = ({ token }: ListItemTokenType) => {
         </YStack>
       </XStack>
 
-      <YStack justifyContent="center" alignItems="flex-end">
+      <YStack justifyContent="center" alignItems="flex-end" space={2}>
         <Text color="white" fontSize={16} fontWeight={700} letterSpacing={0.32}>
           {currencyFormat(token.valuation)}
         </Text>

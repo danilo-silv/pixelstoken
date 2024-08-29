@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { Dimensions, FlatList } from 'react-native';
 
 import { ListItemProduct } from '../ListItemProduct';
@@ -6,34 +5,27 @@ import { SheetBuyProduct } from '../SheetBuyProduct';
 
 import { NFTData } from '@/hooks/useGetProducts/types';
 import { TABBAR_HEIGHT } from '@/navigation/constants';
+import { useSheetBuyProductStore } from '@/store';
 
 interface ListProductType {
   products: NFTData[];
 }
 
 export const ListProduct = ({ products }: ListProductType) => {
-  const [selectedProduct, setSelectedProduct] = useState<NFTData | undefined>(undefined);
-
-  const [open, setOpen] = useState(false);
+  const { setProduct, toggleIsOpen } = useSheetBuyProductStore();
 
   const screenHeight = Dimensions.get('window').height;
 
   const height = screenHeight - 4 * TABBAR_HEIGHT;
 
   const handleSelected = (product: NFTData) => {
-    setSelectedProduct(product);
-    setOpen(true);
+    setProduct(product);
+    toggleIsOpen();
   };
 
   const renderItem = ({ item }: { item: NFTData }) => (
     <ListItemProduct product={item} onSelect={handleSelected} />
   );
-
-  useEffect(() => {
-    if (!open) {
-      setSelectedProduct(undefined);
-    }
-  }, [open]);
 
   return (
     <>
@@ -50,7 +42,7 @@ export const ListProduct = ({ products }: ListProductType) => {
         }}
       />
 
-      <SheetBuyProduct isOpen={open} product={selectedProduct} />
+      <SheetBuyProduct />
     </>
   );
 };

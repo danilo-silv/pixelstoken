@@ -29,6 +29,8 @@ const customTokens = createTokens({
   ...tokens,
   color: {
     ...tokens.color,
+    gray10Light: '#2F2F34',
+    green10Light: '#00FFA3',
     tabBar: '#2A35474D',
   },
 });

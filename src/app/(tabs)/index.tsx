@@ -1,10 +1,18 @@
+import { StatusBar } from 'expo-status-bar';
+import { YStack } from 'tamagui';
+
 import { Container } from '@/components/atoms';
-import { Header } from '@/components/organinsms';
+import { Balance, Header } from '@/components/organinsms';
 
 export default function Home() {
   return (
     <Container>
-      <Header />
+      <StatusBar style="light" />
+      <YStack space={35}>
+        <Header />
+
+        <Balance />
+      </YStack>
     </Container>
   );
 }

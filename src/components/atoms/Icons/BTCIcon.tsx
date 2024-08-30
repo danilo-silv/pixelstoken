@@ -1,6 +1,7 @@
+import { FunctionComponent } from 'react';
 import Svg, { SvgProps, Path, Rect, G, Defs, ClipPath } from 'react-native-svg';
 
-export const BTC = (props: SvgProps) => (
+export const BTC: FunctionComponent<SvgProps> = (props) => (
   <Svg width={45} height={45} fill="none" {...props}>
     <Rect width={45} height={45} fill="#F7931A" rx={22.5} />
     <G clipPath="url(#a)">

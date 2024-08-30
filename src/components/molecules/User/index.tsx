@@ -1,7 +1,8 @@
 import { LinearGradient } from 'expo-linear-gradient';
+import { FunctionComponent } from 'react';
 import { XStack, YStack, Avatar, Text, H4 } from 'tamagui';
 
-export function User() {
+export const User: FunctionComponent = () => {
   return (
     <XStack gap="$2" ai="center">
       <LinearGradient
@@ -26,4 +27,4 @@ export function User() {
       </YStack>
     </XStack>
   );
-}
+};

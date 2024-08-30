@@ -1,3 +1,4 @@
+import { FunctionComponent } from 'react';
 import { Dimensions, FlatList } from 'react-native';
 import { Separator } from 'tamagui';
 
@@ -10,7 +11,7 @@ interface ListNftsType {
   nfts: NFT[];
 }
 
-export const ListNfts = ({ nfts }: ListNftsType) => {
+export const ListNfts: FunctionComponent<ListNftsType> = ({ nfts }) => {
   const screenHeight = Dimensions.get('window').height;
   const halfScreenHeight = screenHeight / 2;
   const height = halfScreenHeight - 2 * TABBAR_HEIGHT;
@@ -19,7 +20,9 @@ export const ListNfts = ({ nfts }: ListNftsType) => {
     return <ListItemNft nft={item} />;
   };
 
-  const renderSeparator = () => <Separator marginVertical={18} borderColor="$blue12Light" />;
+  const renderSeparator: FunctionComponent = () => (
+    <Separator marginVertical={18} borderColor="$blue12Light" />
+  );
 
   return (
     <FlatList

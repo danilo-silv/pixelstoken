@@ -1,9 +1,10 @@
+import { FunctionComponent } from 'react';
 import { Dimensions } from 'react-native';
 import { Text, YStack } from 'tamagui';
 
 import { EmptyCartIllustration } from '@/components/atoms/Illustrations';
 
-export const EmptyCart = () => {
+export const EmptyCart: FunctionComponent = () => {
   const height = Dimensions.get('window').height;
 
   const emptyCartHeight = height / 2;

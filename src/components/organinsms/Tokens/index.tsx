@@ -1,3 +1,4 @@
+import { FunctionComponent } from 'react';
 import { Text } from 'tamagui';
 
 import { TabView } from '../TabView';
@@ -10,7 +11,7 @@ export enum CustomTab {
   NFTs = 'NFTs',
 }
 
-export const Tokens = () => {
+export const Tokens: FunctionComponent = () => {
   const { data } = useGetTokens();
 
   const tokens = data?.[0]?.tokens;

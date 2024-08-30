@@ -1,4 +1,2 @@
-import { BackgroudIllustration } from './BackgroudIllustration';
-import { EmptyCartIllustration } from './EmptyCartIllustration';
-
-export { BackgroudIllustration, EmptyCartIllustration };
+export { BackgroudIllustration } from './BackgroudIllustration';
+export { EmptyCartIllustration } from './EmptyCartIllustration';

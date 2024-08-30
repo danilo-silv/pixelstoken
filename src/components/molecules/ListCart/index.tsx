@@ -1,3 +1,4 @@
+import { FunctionComponent } from 'react';
 import { Dimensions, FlatList } from 'react-native';
 
 import { ListItemCart } from '../ListItemCart';
@@ -7,11 +8,11 @@ import { NFTData } from '@/hooks/useGetProducts/types';
 import { TABBAR_HEIGHT } from '@/navigation/constants';
 import { useCartStore } from '@/store';
 
-interface ListCartType {
+export interface ListCartType {
   products: NFTData[];
 }
 
-export const ListCart = ({ products }: ListCartType) => {
+export const ListCart: FunctionComponent<ListCartType> = ({ products }) => {
   const { removeProduct } = useCartStore();
 
   const screenHeight = Dimensions.get('window').height;

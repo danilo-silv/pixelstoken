@@ -1,3 +1,4 @@
+import { FunctionComponent } from 'react';
 import { Dimensions, FlatList } from 'react-native';
 
 import { ListItemProduct } from '../ListItemProduct';
@@ -11,7 +12,7 @@ interface ListProductType {
   products: NFTData[];
 }
 
-export const ListProduct = ({ products }: ListProductType) => {
+export const ListProduct: FunctionComponent<ListProductType> = ({ products }) => {
   const { setProduct, toggleIsOpen } = useSheetBuyProductStore();
 
   const screenHeight = Dimensions.get('window').height;

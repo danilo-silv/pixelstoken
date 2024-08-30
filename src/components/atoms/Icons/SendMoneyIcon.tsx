@@ -1,6 +1,7 @@
+import { FunctionComponent } from 'react';
 import Svg, { SvgProps, Path } from 'react-native-svg';
 
-export const SendMoney = (props: SvgProps) => (
+export const SendMoney: FunctionComponent<SvgProps> = (props) => (
   <Svg width={34} height={34} fill="none" {...props}>
     <Path
       fill="#fff"

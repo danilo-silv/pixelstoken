@@ -1,3 +1,4 @@
+import { FunctionComponent } from 'react';
 import { FlatList } from 'react-native';
 import { Separator } from 'tamagui';
 
@@ -9,7 +10,7 @@ interface ListTokensType {
   tokens: Token[];
 }
 
-export const ListTokens = ({ tokens }: ListTokensType) => {
+export const ListTokens: FunctionComponent<ListTokensType> = ({ tokens }) => {
   const renderItem = ({ item }: { item: Token }) => {
     return <ListItemToken token={item} />;
   };

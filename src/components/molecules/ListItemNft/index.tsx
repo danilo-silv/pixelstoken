@@ -1,5 +1,6 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome5';
 import { TrendingUp } from '@tamagui/lucide-icons';
+import { FunctionComponent } from 'react';
 import { Image, Text, XStack, YStack } from 'tamagui';
 
 import { NFT } from '@/hooks/useGetTokens/types';
@@ -9,7 +10,7 @@ interface ListItemNftType {
   nft: NFT;
 }
 
-export const ListItemNft = ({ nft }: ListItemNftType) => {
+export const ListItemNft: FunctionComponent<ListItemNftType> = ({ nft }) => {
   return (
     <XStack justifyContent="space-between" alignItems="center">
       <XStack gap={12}>

@@ -1,17 +1,18 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome5';
 import { Trash2 } from '@tamagui/lucide-icons';
+import { FunctionComponent } from 'react';
 import { TouchableOpacity } from 'react-native';
 import { Image, Text, XStack, YStack } from 'tamagui';
 
 import { NFTData } from '@/hooks/useGetProducts/types';
 import config from '@/theme/tamagui.config';
 
-interface ListItemCartType {
+export interface ListItemCartType {
   product: NFTData;
   onRemove: (product: string) => void;
 }
 
-export const ListItemCart = ({ product, onRemove }: ListItemCartType) => {
+export const ListItemCart: FunctionComponent<ListItemCartType> = ({ product, onRemove }) => {
   return (
     <XStack
       bg="$blue12Light"

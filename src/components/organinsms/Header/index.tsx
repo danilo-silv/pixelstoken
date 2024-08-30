@@ -1,12 +1,13 @@
 import { ShoppingCart } from '@tamagui/lucide-icons';
 import { Link } from 'expo-router';
+import { FunctionComponent } from 'react';
 import { Pressable } from 'react-native';
 import { Text, View, XStack } from 'tamagui';
 
 import { User } from '@/components/molecules';
 import { useCartStore } from '@/store';
 
-export const Header = () => {
+export const Header: FunctionComponent = () => {
   const { count } = useCartStore();
   return (
     <XStack justifyContent="space-between" alignItems="center">

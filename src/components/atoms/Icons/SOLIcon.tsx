@@ -1,3 +1,4 @@
+import { FunctionComponent } from 'react';
 import Svg, {
   SvgProps,
   Rect,
@@ -9,7 +10,7 @@ import Svg, {
   ClipPath,
 } from 'react-native-svg';
 
-export const SOL = (props: SvgProps) => (
+export const SOL: FunctionComponent<SvgProps> = (props) => (
   <Svg width={45} height={45} fill="none" {...props}>
     <Rect width={45} height={43.25} y={0.875} fill="#CFFFF3" rx={21.625} />
     <Rect width={32} height={32} x={6.5} y={6.5} fill="#CFFFF3" rx={16} />

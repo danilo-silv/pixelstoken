@@ -1,4 +1,5 @@
 import { TrendingDown, TrendingUp } from '@tamagui/lucide-icons';
+import { FunctionComponent } from 'react';
 import { Text, XStack, YStack } from 'tamagui';
 
 import Icons from '../../atoms/Icons';
@@ -10,7 +11,7 @@ interface ListItemTokenType {
   token: Token;
 }
 
-export const ListItemToken = ({ token }: ListItemTokenType) => {
+export const ListItemToken: FunctionComponent<ListItemTokenType> = ({ token }) => {
   const IconComponent = Icons[token.name];
 
   const growing = token.soaring > 6;

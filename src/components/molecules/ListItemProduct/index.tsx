@@ -1,4 +1,5 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome5';
+import { FunctionComponent } from 'react';
 import { Dimensions, TouchableOpacity } from 'react-native';
 import { Image, Text, XStack, YStack } from 'tamagui';
 
@@ -10,7 +11,7 @@ interface ListItemProductType {
   onSelect: (product: NFTData) => void;
 }
 
-export const ListItemProduct = ({ product, onSelect }: ListItemProductType) => {
+export const ListItemProduct: FunctionComponent<ListItemProductType> = ({ product, onSelect }) => {
   const screenWidth = Dimensions.get('window').width;
   const screenSpacing = 26;
 

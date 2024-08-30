@@ -1,4 +1,5 @@
 import { ShoppingCart } from '@tamagui/lucide-icons';
+import { FunctionComponent } from 'react';
 import { Text, View, XStack, YStack } from 'tamagui';
 
 import { EmptyCart } from '../EmptyCart';
@@ -6,7 +7,7 @@ import { EmptyCart } from '../EmptyCart';
 import { ListCart } from '@/components/molecules';
 import { useCartStore } from '@/store';
 
-export const Cart = () => {
+export const Cart: FunctionComponent = () => {
   const { products, count } = useCartStore();
   return (
     <YStack gap={56}>

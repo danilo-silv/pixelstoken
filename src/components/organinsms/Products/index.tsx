@@ -1,9 +1,10 @@
+import { FunctionComponent } from 'react';
 import { Text, YStack } from 'tamagui';
 
 import { ListProduct } from '@/components/molecules';
 import { useGetProducts } from '@/hooks';
 
-export const Products = () => {
+export const Products: FunctionComponent = () => {
   const { data } = useGetProducts();
 
   return (

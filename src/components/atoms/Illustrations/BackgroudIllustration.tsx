@@ -1,7 +1,8 @@
+import { FunctionComponent } from 'react';
 import Svg, { SvgProps, G, Path, Ellipse, Defs, ClipPath } from 'react-native-svg';
 import { useWindowDimensions } from 'tamagui';
 
-export const BackgroudIllustration = (props: SvgProps) => {
+export const BackgroudIllustration: FunctionComponent<SvgProps> = (props) => {
   const { width: SCREEN_WIDTH } = useWindowDimensions();
 
   return (

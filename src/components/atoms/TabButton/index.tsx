@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { FunctionComponent, useState } from 'react';
 import { LayoutChangeEvent, Pressable } from 'react-native';
 import Animated, {
   runOnJS,
@@ -20,7 +20,11 @@ export interface TabButtonProps {
   setSelectedTab: (index: number) => void;
 }
 
-export const TabButton = ({ buttons, selectedTab, setSelectedTab }: TabButtonProps) => {
+export const TabButton: FunctionComponent<TabButtonProps> = ({
+  buttons,
+  selectedTab,
+  setSelectedTab,
+}) => {
   const [dimensions, setDimensions] = useState({ height: 20, width: 100 });
 
   const buttonWidth = dimensions.width / buttons.length;
@@ -53,7 +57,7 @@ export const TabButton = ({ buttons, selectedTab, setSelectedTab }: TabButtonPro
   });
 
   return (
-    <View accessibilityRole="tabbar" bg="$blue12Light" borderRadius={50} justifyContent="center">
+    <View role="tab" bg="$blue12Light" borderRadius={50} justifyContent="center">
       <Animated.View
         style={[
           animatedStyle,

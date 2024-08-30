@@ -1,13 +1,13 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome5';
 import { LinearGradient } from 'expo-linear-gradient';
-import { useState } from 'react';
+import { FunctionComponent, useState } from 'react';
 import { Dimensions, TouchableOpacity } from 'react-native';
 import { Image, Sheet, Text, XStack, YStack } from 'tamagui';
 
 import { useCartStore, useSheetBuyProductStore } from '@/store';
 import config from '@/theme/tamagui.config';
 
-export const SheetBuyProduct = () => {
+export const SheetBuyProduct: FunctionComponent = () => {
   const { isOpen, toggleIsOpen, product } = useSheetBuyProductStore();
 
   const { addProduct } = useCartStore();

@@ -1,4 +1,4 @@
-import React, { useState, ReactNode, useEffect } from 'react';
+import React, { useState, useEffect, ReactNode, FunctionComponent } from 'react';
 import Animated, { useSharedValue, useAnimatedStyle, withTiming } from 'react-native-reanimated';
 import { View, YStack } from 'tamagui';
 
@@ -9,7 +9,10 @@ interface TabViewProps<T> {
   children: ReactNode[];
 }
 
-export function TabView<T extends object>({ tabEnum, children }: TabViewProps<T>) {
+export const TabView: FunctionComponent<TabViewProps<object>> = <T extends object>({
+  tabEnum,
+  children,
+}: TabViewProps<T>) => {
   const tabTitles = Object.keys(tabEnum).filter((key) => isNaN(Number(key))) as (keyof T)[];
   const [selectedTab, setSelectedTab] = useState<number>(0);
   const opacity = useSharedValue(1);
@@ -40,4 +43,4 @@ export function TabView<T extends object>({ tabEnum, children }: TabViewProps<T>
       </Animated.View>
     </YStack>
   );
-}
+};

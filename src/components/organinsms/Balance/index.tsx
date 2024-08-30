@@ -1,9 +1,10 @@
 import { TrendingUp } from '@tamagui/lucide-icons';
+import { FunctionComponent } from 'react';
 import { Text, XStack, YStack } from 'tamagui';
 
 import { currencyFormat } from '@/utils';
 
-export const Balance = () => {
+export const Balance: FunctionComponent = () => {
   return (
     <YStack gap={9} justifyContent="center" alignItems="center">
       <Text color="white" fontSize={14} fontWeight={600}>

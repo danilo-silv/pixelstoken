@@ -1,11 +1,12 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome6';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Link } from 'expo-router';
+import { FunctionComponent } from 'react';
 import { Button, Text, XStack, YStack } from 'tamagui';
 
 import Icons from '@/components/atoms/Icons';
 
-export const BulletActions = () => {
+export const BulletActions: FunctionComponent = () => {
   return (
     <XStack justifyContent="space-between" alignItems="center" px={48}>
       <YStack gap={8} justifyContent="center" alignItems="center">

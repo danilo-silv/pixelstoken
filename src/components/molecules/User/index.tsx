@@ -3,7 +3,7 @@ import { XStack, YStack, Avatar, Text, H4 } from 'tamagui';
 
 export function User() {
   return (
-    <XStack space="$2" ai="center">
+    <XStack gap="$2" ai="center">
       <LinearGradient
         colors={['#0AFF96', '#00E0FF']}
         start={[0, 0]}

@@ -33,7 +33,7 @@ export function TabView<T extends object>({ tabEnum, children }: TabViewProps<T>
   });
 
   return (
-    <YStack space={24}>
+    <YStack gap={24}>
       <TabButton buttons={buttons} selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
       <Animated.View style={animatedStyle}>
         <View>{children[selectedTab]}</View>

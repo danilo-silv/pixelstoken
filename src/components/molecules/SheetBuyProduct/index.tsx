@@ -4,17 +4,26 @@ import { useState } from 'react';
 import { Dimensions, TouchableOpacity } from 'react-native';
 import { Image, Sheet, Text, XStack, YStack } from 'tamagui';
 
-import { useSheetBuyProductStore } from '@/store';
+import { useCartStore, useSheetBuyProductStore } from '@/store';
 import config from '@/theme/tamagui.config';
 
 export const SheetBuyProduct = () => {
   const { isOpen, toggleIsOpen, product } = useSheetBuyProductStore();
+
+  const { addProduct } = useCartStore();
 
   const [position, setPosition] = useState(0);
 
   const snapPoints = ['100%'];
 
   const screenwidth = Dimensions.get('window').width;
+
+  const handleBuyProduct = () => {
+    if (product) {
+      addProduct(product);
+      toggleIsOpen();
+    }
+  };
 
   return (
     <Sheet
@@ -43,7 +52,7 @@ export const SheetBuyProduct = () => {
               }}
             />
 
-            <YStack pt={10} px={10} space={6}>
+            <YStack pt={10} px={10} gap={6}>
               <Text
                 color="white"
                 fontSize={24}
@@ -65,7 +74,7 @@ export const SheetBuyProduct = () => {
                   {product?.description}
                 </Text>
 
-                <XStack alignItems="center" space={4}>
+                <XStack alignItems="center" gap={4}>
                   <FontAwesome
                     name="ethereum"
                     size={24}
@@ -88,6 +97,7 @@ export const SheetBuyProduct = () => {
                     width: 250,
                   }}>
                   <TouchableOpacity
+                    onPress={handleBuyProduct}
                     style={{
                       backgroundColor: 'transparent',
                       borderRadius: 50,

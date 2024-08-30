@@ -17,9 +17,9 @@ export const ListItemToken = ({ token }: ListItemTokenType) => {
 
   return (
     <XStack justifyContent="space-between" alignItems="center">
-      <XStack space={12}>
+      <XStack gap={12}>
         <IconComponent />
-        <YStack justifyContent="center" space={2}>
+        <YStack justifyContent="center" gap={2}>
           <Text color="white" fontSize={16} fontWeight={700} letterSpacing={0.32}>
             {token.name}
           </Text>
@@ -29,11 +29,11 @@ export const ListItemToken = ({ token }: ListItemTokenType) => {
         </YStack>
       </XStack>
 
-      <YStack justifyContent="center" alignItems="flex-end" space={2}>
+      <YStack justifyContent="center" alignItems="flex-end" gap={2}>
         <Text color="white" fontSize={16} fontWeight={700} letterSpacing={0.32}>
           {currencyFormat(token.valuation)}
         </Text>
-        <XStack space={4} alignItems="center">
+        <XStack gap={4} alignItems="center">
           {growing ? (
             <TrendingUp size={16} color="$green10Light" />
           ) : (

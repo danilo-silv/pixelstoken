@@ -1,5 +1,5 @@
 import { themes } from '@tamagui/themes';
-import {  Tabs } from 'expo-router';
+import { Tabs } from 'expo-router';
 import { FunctionComponent } from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Text, YStack } from 'tamagui';
@@ -40,7 +40,7 @@ export const TabNavigator: FunctionComponent = () => {
             },
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
-              <YStack flex={1} alignItems="center" justifyContent="flex-end" space="$3">
+              <YStack flex={1} alignItems="center" justifyContent="flex-end" gap="$3">
                 <TabBarIcon name="house" color={color} />
                 <Text color={color} fontSize="$1">
                   Home
@@ -53,7 +53,7 @@ export const TabNavigator: FunctionComponent = () => {
                   borderTopLeftRadius={2}
                 />
               </YStack>
-            )
+            ),
           }}
         />
         <Tabs.Screen
@@ -64,7 +64,7 @@ export const TabNavigator: FunctionComponent = () => {
               display: 'none',
             },
             tabBarIcon: ({ color, focused }) => (
-              <YStack flex={1} alignItems="center" justifyContent="flex-end" space="$3">
+              <YStack flex={1} alignItems="center" justifyContent="flex-end" gap="$3">
                 <TabBarIcon name="chart-simple" color={color} />
                 <Text color={color} fontSize="$1">
                   Market

@@ -7,7 +7,7 @@ export const Products = () => {
   const { data } = useGetProducts();
 
   return (
-    <YStack space={24} alignItems="center">
+    <YStack gap={24} alignItems="center">
       <Text fontSize={24} fontWeight={600} color="white">
         Market
       </Text>

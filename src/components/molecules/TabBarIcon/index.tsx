@@ -8,7 +8,7 @@ interface TabBarIconType {
 }
 
 export const TabBarIcon: FunctionComponent<TabBarIconType> = (props) => {
-  return <FontAwesome size={28} style={styles.tabBarIcon} {...props} />;
+  return <FontAwesome size={28} style={styles.tabBarIcon} {...props} testID="tab-bar-icon" />;
 };
 
 export const styles = StyleSheet.create({

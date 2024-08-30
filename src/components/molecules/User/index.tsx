@@ -12,9 +12,13 @@ export const User: FunctionComponent = () => {
         style={{
           padding: 3,
           borderRadius: 50,
-        }}>
+        }}
+        testID="gradient">
         <Avatar size="$5" circular>
-          <Avatar.Image src="https://ca.slack-edge.com/THQS6JHC1-U072Q9RBV1T-f48dbe97c1e5-512" />
+          <Avatar.Image
+            src="https://ca.slack-edge.com/THQS6JHC1-U072Q9RBV1T-f48dbe97c1e5-512"
+            testID="avatar-image"
+          />
           <Avatar.Fallback backgroundColor="$gray5" />
         </Avatar>
       </LinearGradient>

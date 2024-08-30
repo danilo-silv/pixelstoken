@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabBarIcon Component Rendering should render FontAwesome icon correctly with given name and color 1`] = `
+<FontAwesome
+  color="blue"
+  name="home"
+  size={28}
+  style={
+    {
+      "marginBottom": -3,
+    }
+  }
+  testID="tab-bar-icon"
+/>
+`;

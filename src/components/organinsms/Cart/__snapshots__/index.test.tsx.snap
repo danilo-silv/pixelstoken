@@ -1,0 +1,187 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart Component Rendering Rendering Icon FontAwesome should render FontAwesome icon correctly 1`] = `
+<View
+  style={
+    {
+      "flexDirection": "column",
+      "gap": 56,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "column",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <View
+        style={[]}
+      />
+      <Text
+        style={
+          {
+            "color": "#fff",
+            "fontFamily": "Inter",
+            "fontSize": 24,
+            "fontWeight": 700,
+          }
+        }
+        suppressHighlighting={true}
+      >
+        Shopping Cart
+      </Text>
+      <View
+        style={
+          {
+            "position": "relative",
+          }
+        }
+      >
+        <RNSVGSvgView
+          align="xMidYMid"
+          bbHeight={32}
+          bbWidth={32}
+          fill="white"
+          focusable={false}
+          height={32}
+          meetOrSlice={0}
+          minX={0}
+          minY={0}
+          stroke="white"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          style={
+            [
+              {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              {
+                "color": "white",
+              },
+              {
+                "flex": 0,
+                "height": 32,
+                "width": 32,
+              },
+            ]
+          }
+          testID="shopping-cart-icon"
+          tintColor="white"
+          vbHeight={24}
+          vbWidth={24}
+          width={32}
+        >
+          <RNSVGGroup
+            fill={
+              {
+                "payload": 4294967295,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              {
+                "payload": 4294967295,
+                "type": 0,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth="2"
+          >
+            <RNSVGCircle
+              cx="8"
+              cy="21"
+              fill={
+                {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+              propList={
+                [
+                  "stroke",
+                ]
+              }
+              r="1"
+              stroke={
+                {
+                  "payload": 4294967295,
+                  "type": 0,
+                }
+              }
+            />
+            <RNSVGCircle
+              cx="19"
+              cy="21"
+              fill={
+                {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+              propList={
+                [
+                  "stroke",
+                ]
+              }
+              r="1"
+              stroke={
+                {
+                  "payload": 4294967295,
+                  "type": 0,
+                }
+              }
+            />
+            <RNSVGPath
+              d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+              fill={
+                {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+              propList={
+                [
+                  "stroke",
+                ]
+              }
+              stroke={
+                {
+                  "payload": 4294967295,
+                  "type": 0,
+                }
+              }
+            />
+          </RNSVGGroup>
+        </RNSVGSvgView>
+      </View>
+    </View>
+  </View>
+  <Text
+    testID="empty-cart"
+  >
+    EmptyCart
+  </Text>
+</View>
+`;

@@ -1,4 +1,4 @@
-import { Button } from './Button';
-import { Container } from './Container';
+export type { TabButtonType } from './TabButton';
 
-export { Container, Button };
+export { Container } from './Container';
+export { TabButton } from './TabButton';

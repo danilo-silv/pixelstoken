@@ -1,5 +1,6 @@
 import { useFonts } from 'expo-font';
 import { SplashScreen } from 'expo-router';
+import { StatusBar } from 'expo-status-bar';
 import React, { useEffect } from 'react';
 
 import { RootStackNavigator } from '@/navigation/RootStackNavigator';
@@ -27,6 +28,7 @@ export default function RootLayout() {
 
   return (
     <Providers>
+      <StatusBar style="light" />
       <RootStackNavigator />
     </Providers>
   );

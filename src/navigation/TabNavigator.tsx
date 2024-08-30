@@ -1,20 +1,22 @@
 import { themes } from '@tamagui/themes';
-import { Link, Tabs } from 'expo-router';
+import { Tabs } from 'expo-router';
 import { FunctionComponent } from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Text, useTheme, YStack } from 'tamagui';
+import { Text, YStack } from 'tamagui';
 
 import { TABBAR_HEIGHT } from './constants';
 
-import { HeaderButton } from '@/components/HeaderButton';
+import { BackgroudIllustration } from '@/components/atoms/Illustrations';
 import { TabBarIcon } from '@/components/molecules';
 import config from '@/theme/tamagui.config';
 
 export const TabNavigator: FunctionComponent = () => {
-  const theme = useTheme();
   const insets = useSafeAreaInsets();
   return (
-    <YStack flex={1} backgroundColor="$background">
+    <YStack flex={1} backgroundColor="$background" position="relative">
+      <YStack position="absolute">
+        <BackgroudIllustration />
+      </YStack>
       <Tabs
         screenOptions={{
           tabBarActiveTintColor: 'white',
@@ -28,7 +30,7 @@ export const TabNavigator: FunctionComponent = () => {
           },
         }}
         sceneContainerStyle={{
-          backgroundColor: theme.background.val,
+          backgroundColor: 'transparent',
         }}>
         <Tabs.Screen
           name="index"
@@ -38,7 +40,7 @@ export const TabNavigator: FunctionComponent = () => {
             },
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
-              <YStack flex={1} alignItems="center" justifyContent="flex-end" space="$3">
+              <YStack flex={1} alignItems="center" justifyContent="flex-end" gap="$3">
                 <TabBarIcon name="house" color={color} />
                 <Text color={color} fontSize="$1">
                   Home
@@ -52,22 +54,17 @@ export const TabNavigator: FunctionComponent = () => {
                 />
               </YStack>
             ),
-            headerRight: () => (
-              <Link href="/cart" asChild>
-                <HeaderButton />
-              </Link>
-            ),
           }}
         />
         <Tabs.Screen
-          name="two"
+          name="market"
           options={{
             headerShown: false,
             tabBarLabelStyle: {
               display: 'none',
             },
             tabBarIcon: ({ color, focused }) => (
-              <YStack flex={1} alignItems="center" justifyContent="flex-end" space="$3">
+              <YStack flex={1} alignItems="center" justifyContent="flex-end" gap="$3">
                 <TabBarIcon name="chart-simple" color={color} />
                 <Text color={color} fontSize="$1">
                   Market

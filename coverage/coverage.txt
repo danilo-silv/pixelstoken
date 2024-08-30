@@ -1,0 +1,105 @@
+-------------------|---------|----------|---------|---------|-------------------
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------|---------|----------|---------|---------|-------------------
+All files          |   15.38 |       10 |    4.76 |      16 |                   
+ pixelstoken       |       0 |        0 |       0 |       0 |                   
+  expo-env.d.ts    |       0 |        0 |       0 |       0 |                   
+ ...en/.expo/types |       0 |        0 |       0 |       0 |                   
+  router.d.ts      |       0 |        0 |       0 |       0 |                   
+ ...stoken/src/app |       0 |        0 |       0 |       0 |                   
+  _layout.tsx      |       0 |        0 |       0 |       0 | 9-29              
+  cart.tsx         |       0 |      100 |       0 |       0 | 8                 
+ ...src/app/(tabs) |       0 |      100 |       0 |       0 |                   
+  _layout.tsx      |       0 |      100 |       0 |       0 | 6                 
+  index.tsx        |       0 |      100 |       0 |       0 | 7                 
+  market.tsx       |       0 |      100 |       0 |       0 | 7                 
+ ...mponents/atoms |       0 |        0 |       0 |       0 |                   
+  index.ts         |       0 |        0 |       0 |       0 |                   
+ ...toms/Container |     100 |      100 |     100 |     100 |                   
+  index.tsx        |     100 |      100 |     100 |     100 |                   
+ ...ts/atoms/Icons |      50 |      100 |       0 |      50 |                   
+  BTCIcon.tsx      |      50 |      100 |       0 |      50 | 5                 
+  ETHIcon.tsx      |      50 |      100 |       0 |      50 | 5                 
+  ...MoneyIcon.tsx |      50 |      100 |       0 |      50 | 5                 
+  SOLIcon.tsx      |      50 |      100 |       0 |      50 | 14                
+  ...MoneyIcon.tsx |      50 |      100 |       0 |      50 | 5                 
+  index.ts         |       0 |        0 |       0 |       0 |                   
+ .../Illustrations |      40 |      100 |       0 |      40 |                   
+  ...ustration.tsx |   33.33 |      100 |       0 |   33.33 | 6-8               
+  ...ustration.tsx |      50 |      100 |       0 |      50 | 5                 
+  index.ts         |       0 |        0 |       0 |       0 |                   
+ ...toms/TabButton |       0 |        0 |       0 |       0 |                   
+  index.tsx        |       0 |        0 |       0 |       0 | 23-81             
+ ...ents/molecules |       0 |        0 |       0 |       0 |                   
+  index.ts         |       0 |        0 |       0 |       0 |                   
+ ...cules/ListCart |       0 |      100 |       0 |       0 |                   
+  index.tsx        |       0 |      100 |       0 |       0 | 15-35             
+ ...s/ListItemCart |   33.33 |      100 |       0 |   33.33 |                   
+  index.tsx        |   33.33 |      100 |       0 |   33.33 | 16-53             
+ ...es/ListItemNft |      50 |      100 |       0 |      50 |                   
+  index.tsx        |      50 |      100 |       0 |      50 | 14                
+ ...istItemProduct |   16.66 |      100 |       0 |   16.66 |                   
+  index.tsx        |   16.66 |      100 |       0 |   16.66 | 15-21             
+ .../ListItemToken |      25 |        0 |       0 |      25 |                   
+  index.tsx        |      25 |        0 |       0 |      25 | 15-19             
+ ...cules/ListNfts |      10 |      100 |       0 |      10 |                   
+  index.tsx        |      10 |      100 |       0 |      10 | 15-31             
+ ...es/ListProduct |    9.09 |      100 |       0 |    9.09 |                   
+  index.tsx        |    9.09 |      100 |       0 |    9.09 | 16-37             
+ ...les/ListTokens |   14.28 |      100 |       0 |   16.66 |                   
+  index.tsx        |   14.28 |      100 |       0 |   16.66 | 14-24             
+ ...heetBuyProduct |    9.09 |        0 |       0 |    9.09 |                   
+  index.tsx        |    9.09 |        0 |       0 |    9.09 | 11-28             
+ ...les/TabBarIcon |     100 |      100 |     100 |     100 |                   
+  index.tsx        |     100 |      100 |     100 |     100 |                   
+ ...molecules/User |     100 |      100 |     100 |     100 |                   
+  index.tsx        |     100 |      100 |     100 |     100 |                   
+ ...nts/organinsms |       0 |        0 |       0 |       0 |                   
+  index.ts         |       0 |        0 |       0 |       0 |                   
+ ...ninsms/Balance |       0 |      100 |       0 |       0 |                   
+  index.tsx        |       0 |      100 |       0 |       0 | 7-8               
+ .../BulletActions |       0 |      100 |       0 |       0 |                   
+  index.tsx        |       0 |      100 |       0 |       0 | 9-10              
+ ...rganinsms/Cart |     100 |      100 |     100 |     100 |                   
+  index.tsx        |     100 |      100 |     100 |     100 |                   
+ ...nsms/EmptyCart |       0 |      100 |       0 |       0 |                   
+  index.tsx        |       0 |      100 |       0 |       0 | 7-12              
+ ...aninsms/Header |       0 |        0 |       0 |       0 |                   
+  index.tsx        |       0 |        0 |       0 |       0 | 10-18             
+ ...insms/Products |       0 |        0 |       0 |       0 |                   
+  index.tsx        |       0 |        0 |       0 |       0 | 7-10              
+ ...ninsms/TabView |       0 |      100 |       0 |       0 |                   
+  index.tsx        |       0 |      100 |       0 |       0 | 12-38             
+ ...aninsms/Tokens |       0 |        0 |       0 |       0 |                   
+  index.tsx        |       0 |        0 |       0 |       0 | 14-20             
+ ...oken/src/hooks |       0 |        0 |       0 |       0 |                   
+  index.ts         |       0 |        0 |       0 |       0 |                   
+ ...hooks/useFetch |       0 |        0 |       0 |       0 |                   
+  index.ts         |       0 |        0 |       0 |       0 | 11-22             
+  types.ts         |       0 |        0 |       0 |       0 |                   
+ ...useGetProducts |       0 |      100 |       0 |       0 |                   
+  index.ts         |       0 |      100 |       0 |       0 | 4-7               
+  types.ts         |       0 |        0 |       0 |       0 |                   
+ ...s/useGetTokens |       0 |      100 |       0 |       0 |                   
+  index.ts         |       0 |      100 |       0 |       0 | 4-7               
+  types.ts         |       0 |        0 |       0 |       0 |                   
+ ...rc/integration |       0 |      100 |       0 |       0 |                   
+  client.ts        |       0 |      100 |       0 |       0 | 3-4               
+ ...src/navigation |    12.5 |      100 |       0 |    12.5 |                   
+  ...Navigator.tsx |       0 |      100 |       0 |       0 | 4-5               
+  TabNavigator.tsx |       0 |      100 |       0 |       0 | 13-67             
+  constants.ts     |     100 |      100 |     100 |     100 |                   
+ .../src/providers |       0 |      100 |       0 |       0 |                   
+  index.tsx        |       0 |      100 |       0 |       0 | 7-8               
+ ...oken/src/store |       0 |        0 |       0 |       0 |                   
+  index.ts         |       0 |        0 |       0 |       0 |                   
+ .../store/useCart |       0 |        0 |       0 |       0 |                   
+  index.ts         |       0 |        0 |       0 |       0 | 12-33             
+ ...heetBuyProduct |       0 |        0 |       0 |       0 |                   
+  index.ts         |       0 |        0 |       0 |       0 | 12-26             
+ ...oken/src/theme |     100 |      100 |     100 |     100 |                   
+  ...gui.config.ts |     100 |      100 |     100 |     100 |                   
+ ...oken/src/utils |   33.33 |      100 |       0 |   33.33 |                   
+  formatters.ts    |   33.33 |      100 |       0 |   33.33 | 2-7               
+  index.ts         |       0 |        0 |       0 |       0 |                   
+-------------------|---------|----------|---------|---------|-------------------

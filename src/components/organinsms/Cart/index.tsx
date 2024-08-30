@@ -18,7 +18,7 @@ export const Cart: FunctionComponent = () => {
             Shopping Cart
           </Text>
           <View position="relative">
-            <ShoppingCart size={32} color="white" fill="white" />
+            <ShoppingCart size={32} color="white" fill="white" testID="shopping-cart-icon" />
             {count > 0 && (
               <View
                 h={21}

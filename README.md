@@ -1,8 +1,7 @@
+
 ## Pixelstoken
 
-Pixelstoken é um projeto desenvolvido em React Native com Expo, utilizando o Tamagui UI Kit para a criação de interfaces. Gerenciamos estados com o Zustand, fazemos requisições com o SWR, e estamos utilizando uma configuração fornecida pelo `https://createexpostack.com/`. 
-
-O projeto consiste em uma Carteira de Tokens onde o usuário pode visualizar e adquirir NTF's
+Pixelstoken é um projeto desenvolvido em React Native com Expo, utilizando o Tamagui UI Kit para criação de interfaces. Gerenciamos estados com o Zustand, realizamos requisições com o SWR e usamos uma configuração fornecida pelo [Create Expo Stack](https://createexpostack.com/). O projeto consiste em uma carteira de tokens onde o usuário pode visualizar e adquirir NFTs.
 
 ## Requisitos
 
@@ -15,7 +14,7 @@ O projeto consiste em uma Carteira de Tokens onde o usuário pode visualizar e a
 - **UI Kit**: [Tamagui](https://tamagui.dev/)
 - **Gerenciamento de Estado**: Zustand
 - **Fetch de Dados**: SWR
-- **Testes**: JesReact Testing Library
+- **Testes**: Jest e React Testing Library
 
 ## Configuração Inicial
 
@@ -42,6 +41,8 @@ Crie um arquivo `.env` na raiz do projeto e adicione a seguinte variável de amb
 API_BASE_URL=https://66cbe57d4290b1c4f19b573c.mockapi.io/api/v1
 ```
 
+Este projeto utiliza o serviço de integração do [MockAPI](https://mockapi.io/), onde temos duas rotas cadastradas para retornar produtos, como Tokens e NFTs.
+
 ### 4. Iniciar o Servidor de Desenvolvimento
 
 ```sh
@@ -54,7 +55,7 @@ Para executar o aplicativo, abra o aplicativo **Expo Go** no seu dispositivo e e
 
 ## Configurações do CESConfig
 
-O `cesconfig.json` fornece uma configuração padrão para Prettier e ESLint que será aplicada automaticamente ao seu projeto. 
+O `cesconfig.json` fornece uma configuração padrão para Prettier e ESLint, que será aplicada automaticamente ao seu projeto.
 
 ## Testes
 
@@ -63,6 +64,13 @@ Este projeto utiliza o **React Testing Library** para testes. Para executar os t
 ```sh
 yarn test
 ```
+
+## Vídeo Demonstrativo
+
+Abaixo você pode assistir ao vídeo explicando a interface de usuário (UI) do aplicativo Pixelstoken:
+
+[Vimeo](https://vimeo.com/1004497776?share=copy)
+
 
 ## Links Úteis
 
@@ -73,6 +81,4 @@ yarn test
 
 ## Contato
 
-Para quaisquer dúvidas ou contribuições, por favor abra um issue no repositório ou entre em contato através do email: danilo.ssilva72@gmail.com
-
----
+Para quaisquer dúvidas ou contribuições, por favor, abra uma issue no repositório ou entre em contato através do email: danilo.ssilva72@gmail.com
